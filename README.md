@@ -24,3 +24,25 @@ Stretch Goals:
 Break questions up into sections which appear as questions are being answered.
 
 Page linking to resources.
+
+Back button a strecth goal.
+
+Eliminate 1st page
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Inital 6 questions
+
+1. Size (S, M, L)
+
+2. Lifestyle (Active or Sedentary)
+
+3. Allergies? (Y, N)
+
+4. Purpose of getting a dog? (Companionship, Protection, Service)
+
+5. Noise Tolerance (Minimal, Somewhat, Who Cares)
+
+
+
+
