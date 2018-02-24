@@ -15,12 +15,12 @@ function getQuizResults(event) {
   var sizeOfPup = event.target.sizeOfPup.value;
   var pupLifestyle = event.target.pupLifestyle.value;
   var allergies = event.target.allergies.value;
-  var pupPurpose = event.target.pupPurpose.value;
+  var pupService = event.target.pupService.value;
   var noiseTolerance = event.target.noiseTolerance.value;
   var furLength = event.target.furLength.value;
 
   console.log('getQuizResults'+getQuizResults);
-  quizResults = [sizeOfPup, pupLifestyle, allergies, pupPurpose, noiseTolerance, furLength];
+  quizResults = [sizeOfPup, pupLifestyle, allergies, pupService, noiseTolerance, furLength];
   console.log('quizResults'+quizResults);
 
   //Take Checkpoint:  Save results to local storage
