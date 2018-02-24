@@ -23,6 +23,12 @@ function getQuizResults(event) {
   quizResults = [sizeOfPup, pupLifestyle, allergies, pupPurpose, noiseTolerance, furLength];
   console.log('quizResults'+quizResults);
 
+  //Take Checkpoint:  Save results to local storage
+  var strQuizResults = JSON.stringify(quizResults);
+  localStorage.setItem('quizResults', strQuizResults);
+  // var strNumSelections = JSON.stringify(numSelections);
+  // localStorage.setItem('numselections', strNumSelections);
+
   // var minCust = parseInt(event.target.minCust.value);
 
   
