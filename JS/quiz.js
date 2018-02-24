@@ -10,7 +10,7 @@ var quizResults = [];
 // This function handles the addition of a new location
 function getQuizResults(event) {
   event.preventDefault(); //prevents page reload
-  
+
   //Retrieve values from form
   var sizeOfPup = event.target.sizeOfPup.value;
   var pupLifestyle = event.target.pupLifestyle.value;
@@ -23,9 +23,15 @@ function getQuizResults(event) {
   quizResults = [sizeOfPup, pupLifestyle, allergies, pupPurpose, noiseTolerance, furLength];
   console.log('quizResults'+quizResults);
 
+  //Take Checkpoint:  Save results to local storage
+  var strQuizResults = JSON.stringify(quizResults);
+  localStorage.setItem('quizResults', strQuizResults);
+  // var strNumSelections = JSON.stringify(numSelections);
+  // localStorage.setItem('numselections', strNumSelections);
+
   // var minCust = parseInt(event.target.minCust.value);
 
-  
+
   //Verify that we have valid values, Exit if error
   //Required field validation now handled by HTML5
   //if (!locName || !minCust || !maxCust || !avgSale) {
