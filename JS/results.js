@@ -3,6 +3,7 @@
 //Array to store the quiz results
 var quizResults = [];
 
+
 var allPups =[];
 
 
@@ -52,3 +53,4 @@ function scorePups() {
         }
     }
 }
+
