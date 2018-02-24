@@ -6,41 +6,39 @@ https://www.purina.com/dogs/dog-breeds
 
 
 
-Small Dogs:
-Short Fur:
-Medium Fur:
-Long Fur:
 
 
 /////Medium Dogs//////
-Short Fur:
+No Fur:
 Basset Hound(low energy)
+Bull Dog (low energy)
+
 Miniature Bull Terrier(medium energy)
+Whippet (medium energy)
+
 Dalmation(High Energy)
 
-Medium Fur:
+With Fur:
 Clumber Spaniel (low energy)
-Standard Schnauzer(medium energy)
-Australian Shepard(high energy)
 
-Long Fur:
-American Eskimo Dog
+Standard Schnauzer(medium energy)
+Polish Lowland Sheepdog(medium energy)
+
+Australian Shepard(high energy)
+Border Collie(high energy)
+
 
 ///////Large Dogs/////
-Short Fur:
+No Fur:
 Mastiff (low energy)
+Bloodhound (low energy)
+
 Great Dane (medium energy)
+
 Rottweiler (high energy)
+Labrador Retriever (high energy)
 
-Medium Fur:
-Chow Chow (low energy)
-Saint Bernard (medium energy)
-Poodle(high energy)
 
-Long Fur:
-Great Pyrenees (low energy)
-Bergamasco(medium energy)
-Afghan Hound(high energy)
 
 
 
