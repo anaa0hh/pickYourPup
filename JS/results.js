@@ -39,6 +39,10 @@ instantiateDogs();
 
 scorePups();
 console.log(allPups);
+sortPups();
+console.log(allPups);
+// sort by value
+
 //**********FUNCTIONS START HERE *****************/
 //Build Objects
 function instantiateDogs() {
@@ -77,11 +81,14 @@ function scorePups() {
     if(quizResults[5] === allPups[i].furLength || quizResults[5] === 'fur-dont-care' || (quizResults[5] === 'some-fur' && allPups[i].furLength === 'min-fur')) {
       allPups[i].pupScore++;
     }
-
-
-
-
-
   }
+}
+// This function is going to sort the pups in the allPups array by pupScore
+function sortPups() {
+  allPups.sort(function (a, b) {
+    console.log('a.pupScore ' + a.pupScore);
+    console.log('b pupScore ' + b.pupScore);
+  return +a.pupScore - +b.pupScore;
+  });
 }
 
