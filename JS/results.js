@@ -2,10 +2,8 @@
 
 //Array to store the quiz results
 var quizResults = [];
-
-
-var allPups =[];
-
+var allPups = [];
+var topDogs = [];
 
 //Arrays for current and next selections
 
@@ -35,12 +33,8 @@ function Dog(breed, sizeOfPup, pupLifestyle, allergies, pupService, noiseToleran
     // console.log(quizResults);
   }
 })();
-instantiateDogs();
 
-scorePups();
-console.log(allPups);
-sortPups();
-console.log(allPups);
+
 // sort by value
 
 //**********FUNCTIONS START HERE *****************/
@@ -49,8 +43,19 @@ function instantiateDogs() {
   new Dog('Newfoundland', 'large' , 'sedentary', 'yes', 'yes', 'no-barking', 'some-fur', 'newfy.jpg');
   new Dog('Smooth Coat Dachsund', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'min-fur', 'doxie.jpg');
   new Dog('Golden Retriever', 'large' , 'active', 'yes', 'yes', 'some-barking', 'some-fur', 'golden.jpg');
+  new Dog('Bichon Frise', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'some-fur', 'bichon.jpg');
 
 }
+
+
+instantiateDogs();
+scorePups();
+sortPups();
+console.log('postsort ', allPups);
+selectTopDogs();
+
+displayTopDogs();
+console.log('topDogs ', topDogs);
 
 
 function scorePups() {
@@ -85,10 +90,40 @@ function scorePups() {
 }
 // This function is going to sort the pups in the allPups array by pupScore
 function sortPups() {
+<<<<<<< HEAD
   allPups.sort(function (b, a) {
     // console.log('a.pupScore ' + a.pupScore);
     // console.log('b pupScore ' + b.pupScore);
   return +a.pupScore - +b.pupScore;
+=======
+  allPups.sort(function(b, a) {
+    return +a.pupScore - +b.pupScore;
+>>>>>>> 49b141cbfe5ee05a4b261d9f88570cc05448e760
   });
 }
+// In order for a dog to be considered for the topDog array, the size must match
+function selectTopDogs() {
+  var i = 0;
+  var endOfScoringDogs = false;
+  while(topDogs.length < 3 && endOfScoringDogs === false && i < allPups.length) {
+    // console.log('allPups[i].pupScore' , allPups[i].pupScore);
+    // console.log('allPups index', i);
+    if(allPups[i].pupScore > 0 && quizResults[0] === allPups[i].sizeOfPup) {
+      topDogs.push(allPups[i]);
+    } else {
+      if (allPups[i] === 0) {
+        endOfScoringDogs = true;
+      }
+    }
+    i++;
+  }
+}
 
+function displayTopDogs() {
+  var resultPic = document.getElementById('result-pic');
+  var resultPic2 = document.getElementById('result-pic2');
+  var resultPic3 = document.getElementById('result-pic3');
+  resultPic.src = 'img/' +topDogs[0].filePath;
+  resultPic2.src = 'img/' +topDogs[1].filePath;
+  resultPic3.src = 'img/' +topDogs[2].filePath;
+}
