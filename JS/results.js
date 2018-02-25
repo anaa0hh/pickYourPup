@@ -42,9 +42,26 @@ function Dog(breed, sizeOfPup, pupLifestyle, allergies, pupService, noiseToleran
 //Build Objects
 function instantiateDogs() {
   new Dog('Newfoundland', 'large' , 'sedentary', 'yes', 'yes', 'no-barking', 'some-fur', 'newfy.jpg', 'NF Description');
-  new Dog('Smooth Coat Dachsund', 'large' , 'somewhat-active', 'no', 'no', 'some-barking', 'min-fur', 'doxie.jpg', 'Dach Description');
+  new Dog('Smooth Coat Dachsund', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'min-fur', 'doxie.jpg', 'Dach Description');
   new Dog('Golden Retriever', 'large' , 'active', 'yes', 'yes', 'some-barking', 'some-fur', 'golden.jpg', 'GR Description');
   new Dog('Bichon Frise', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'some-fur', 'bichon.jpg', 'BF Description');
+  
+  new Dog('Basset Hound', 'medium' , 'sedentary', 'yes', 'no', 'some-barking', 'min-fur', 'basset.jpg', 'BF Description');
+  new Dog('Bull Dog', 'medium' , 'sedentary', 'yes', 'no', 'some-barking', 'min-fur', 'bulldog.jpg', 'BF Description');
+  new Dog('Miniature Terrier', 'medium' , 'somewhat-active', 'no', 'no', 'some-barking', 'min-fur', 'miniterrier.jpg', 'BF Description');
+  new Dog('Whippet', 'medium' , 'somewhat-active', 'yes', 'no', 'some-barking', 'min-fur', 'whippet.jpg', 'BF Description');
+  new Dog('Dalmatian', 'medium' , 'active', 'yes', 'yes', 'some-barking', 'min-fur', 'dalmatian.jpg', 'BF Description');
+  new Dog('Clumber Spaniel', 'medium' , 'sedentary', 'yes', 'no', 'some-barking', 'some-fur', 'clumberspaniel.jpg', 'BF Description');
+  new Dog('Standard Schnauzer', 'medium' , 'somewhat-active', 'no', 'no', 'some-barking', 'some-fur', 'standardschnauzer.jpg', 'BF Description');
+  new Dog('Polish Lowland Sheepdog', 'medium' , 'somewhat-active', 'no', 'no', 'some-barking', 'some-fur', 'polishsheepdog.jpg', 'BF Description');
+  new Dog('Australian Shepard', 'medium' , 'active', 'yes', 'yes', 'some-barking', 'some-fur', 'australianshepard.jpg', 'BF Description');
+  new Dog('Border Collie', 'medium' , 'active', 'yes', 'yes', 'some-barking', 'some-fur', 'bordercollie.jpg', 'BF Description');
+
+  new Dog('Mastiff', 'large' , 'sedentary', 'yes', 'no', 'some-barking', 'some-fur', 'mastiff.jpg', 'BF Description');
+  new Dog('Bloodhound', 'large' , 'sedentary', 'yes', 'no', 'some-barking', 'some-fur', 'bloodhound.jpg', 'BF Description');
+  new Dog('Great Dane', 'large' , 'somewhat-active', 'yes', 'yes', 'some-barking', 'some-fur', 'greatdane.jpg', 'BF Description');
+  new Dog('Rottweiler', 'large' , 'active', 'yes', 'yes', 'some-barking', 'some-fur', 'rottweiler.jpg', 'BF Description');
+  new Dog('Labrador Retriever', 'large' , 'active', 'yes', 'yes', 'some-barking', 'some-fur', 'labretriever.jpg', 'BF Description');
 
 }
 
@@ -95,7 +112,7 @@ function sortPups() {
   allPups.sort(function (b, a) {
     // console.log('a.pupScore ' + a.pupScore);
     // console.log('b pupScore ' + b.pupScore);
-  return +a.pupScore - +b.pupScore;
+    return +a.pupScore - +b.pupScore;
 
   });
 }
