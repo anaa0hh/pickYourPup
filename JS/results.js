@@ -91,14 +91,22 @@ function scorePups() {
 // This function is going to sort the pups in the allPups array by pupScore
 function sortPups() {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 71a8fd5cea34c1b7e0e0b5bb9145bb68019f1a28
   allPups.sort(function (b, a) {
     // console.log('a.pupScore ' + a.pupScore);
     // console.log('b pupScore ' + b.pupScore);
   return +a.pupScore - +b.pupScore;
+<<<<<<< HEAD
 =======
   allPups.sort(function(b, a) {
     return +a.pupScore - +b.pupScore;
 >>>>>>> 49b141cbfe5ee05a4b261d9f88570cc05448e760
+=======
+
+>>>>>>> 71a8fd5cea34c1b7e0e0b5bb9145bb68019f1a28
   });
 }
 // In order for a dog to be considered for the topDog array, the size must match
