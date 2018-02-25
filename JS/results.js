@@ -90,8 +90,12 @@ function scorePups() {
 }
 // This function is going to sort the pups in the allPups array by pupScore
 function sortPups() {
-  allPups.sort(function(b, a) {
-    return +a.pupScore - +b.pupScore;
+
+  allPups.sort(function (b, a) {
+    // console.log('a.pupScore ' + a.pupScore);
+    // console.log('b pupScore ' + b.pupScore);
+  return +a.pupScore - +b.pupScore;
+
   });
 }
 // In order for a dog to be considered for the topDog array, the size must match
