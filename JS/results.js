@@ -159,3 +159,12 @@ clearLS.addEventListener('click', function() {
   console.log('Clearing Local Storage');
   localStorage.clear();
 });
+
+var returnToQuiz = document.getElementById('returnQuiz');
+
+returnToQuiz.addEventListener('click', function() {
+  console.log('returnToQuiz');
+  window.location.href="quiz.html";
+ 
+});
+
