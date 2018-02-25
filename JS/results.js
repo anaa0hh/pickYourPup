@@ -8,7 +8,7 @@ var topDogs = [];
 //Arrays for current and next selections
 
 //constructor for dogs
-function Dog(breed, sizeOfPup, pupLifestyle, allergies, pupService, noiseTolerance, furLength, filePath) {
+function Dog(breed, sizeOfPup, pupLifestyle, allergies, pupService, noiseTolerance, furLength, filePath, pupDesc) {
   this.breed = breed;
   this.sizeOfPup = sizeOfPup;
   this.pupLifestyle = pupLifestyle;
@@ -18,6 +18,7 @@ function Dog(breed, sizeOfPup, pupLifestyle, allergies, pupService, noiseToleran
   this.furLength = furLength;
   this.pupScore = 0;
   this.filePath=filePath;
+  this.pupDesc=pupDesc;
 
   allPups.push(this);
 }
@@ -40,10 +41,10 @@ function Dog(breed, sizeOfPup, pupLifestyle, allergies, pupService, noiseToleran
 //**********FUNCTIONS START HERE *****************/
 //Build Objects
 function instantiateDogs() {
-  new Dog('Newfoundland', 'large' , 'sedentary', 'yes', 'yes', 'no-barking', 'some-fur', 'newfy.jpg');
-  new Dog('Smooth Coat Dachsund', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'min-fur', 'doxie.jpg');
-  new Dog('Golden Retriever', 'large' , 'active', 'yes', 'yes', 'some-barking', 'some-fur', 'golden.jpg');
-  new Dog('Bichon Frise', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'some-fur', 'bichon.jpg');
+  new Dog('Newfoundland', 'large' , 'sedentary', 'yes', 'yes', 'no-barking', 'some-fur', 'newfy.jpg', 'NF Description');
+  new Dog('Smooth Coat Dachsund', 'large' , 'somewhat-active', 'no', 'no', 'some-barking', 'min-fur', 'doxie.jpg', 'Dach Description');
+  new Dog('Golden Retriever', 'large' , 'active', 'yes', 'yes', 'some-barking', 'some-fur', 'golden.jpg', 'GR Description');
+  new Dog('Bichon Frise', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'some-fur', 'bichon.jpg', 'BF Description');
 
 }
 
@@ -119,4 +120,43 @@ function displayTopDogs() {
   resultPic.src = 'img/' +topDogs[0].filePath;
   resultPic2.src = 'img/' +topDogs[1].filePath;
   resultPic3.src = 'img/' +topDogs[2].filePath;
+  resultPic.addEventListener('click', SelectedZero);
+  resultPic2.addEventListener('click', SelectedOne);
+  resultPic3.addEventListener('click', SelectedTwo);
+
 }
+//Handle/Determine Different Selections
+function SelectedZero() {
+  userSelection(0);
+}
+function SelectedOne() {
+  userSelection(1);
+}
+function SelectedTwo() {
+  userSelection(2);
+}
+
+//Handle Selection
+function userSelection(selection) {
+  console.log('User selected ' + topDogs[selection].breed);
+
+  //Output Totals
+  var breedDesc = document.getElementById('breedDesc');
+  breedDesc.textContent = 'Breed Description';
+
+  //Append each list line
+  //Append each list line
+  var liEl = document.createElement('li');
+  liEl.textContent = topDogs[selection].breed;
+  breedDesc.appendChild(liEl);
+  liEl = document.createElement('li');
+  liEl.textContent = topDogs[selection].pupDesc;
+  breedDesc.appendChild(liEl);
+}
+
+//Create listener to clear local storage on command.
+var clearLS = document.getElementById('clearStorage');
+clearLS.addEventListener('click', function() {
+  console.log('Clearing Local Storage');
+  localStorage.clear();
+});
