@@ -1,12 +1,9 @@
 'use strict';
-
 //Array to store the quiz results
 var quizResults = [];
 var allPups = [];
 var topDogs = [];
-
 //Arrays for current and next selections
-
 //constructor for dogs
 function Dog(breed, sizeOfPup, pupLifestyle, allergies, pupService, noiseTolerance, furLength, filePath, pupDesc) {
   this.breed = breed;
@@ -19,12 +16,9 @@ function Dog(breed, sizeOfPup, pupLifestyle, allergies, pupService, noiseToleran
   this.pupScore = 0;
   this.filePath=filePath;
   this.pupDesc=pupDesc;
-
   allPups.push(this);
 }
-
 //*********MAINLINE*********
-
 //Retrieve quiz results
 (function getLocalStorage() {
   if (localStorage.quizResults) {
@@ -34,10 +28,7 @@ function Dog(breed, sizeOfPup, pupLifestyle, allergies, pupService, noiseToleran
     // console.log(quizResults);
   }
 })();
-
-
 // sort by value
-
 //**********FUNCTIONS START HERE *****************/
 //Build Objects
 function instantiateDogs() {
@@ -45,20 +36,14 @@ function instantiateDogs() {
   new Dog('Smooth Coat Dachsund', 'large' , 'somewhat-active', 'no', 'no', 'some-barking', 'min-fur', 'doxie.jpg', 'Dach Description');
   new Dog('Golden Retriever', 'large' , 'active', 'yes', 'yes', 'some-barking', 'some-fur', 'golden.jpg', 'GR Description');
   new Dog('Bichon Frise', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'some-fur', 'bichon.jpg', 'BF Description');
-
 }
-
-
 instantiateDogs();
 scorePups();
 sortPups();
 console.log('postsort ', allPups);
 selectTopDogs();
-
 displayTopDogs();
 console.log('topDogs ', topDogs);
-
-
 function scorePups() {
   for (var i=0; i < allPups.length; i++) {
     //we are starting at one because we don't want to incluse the first question in score
@@ -91,23 +76,10 @@ function scorePups() {
 }
 // This function is going to sort the pups in the allPups array by pupScore
 function sortPups() {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 71a8fd5cea34c1b7e0e0b5bb9145bb68019f1a28
   allPups.sort(function (b, a) {
     // console.log('a.pupScore ' + a.pupScore);
     // console.log('b pupScore ' + b.pupScore);
   return +a.pupScore - +b.pupScore;
-<<<<<<< HEAD
-=======
-  allPups.sort(function(b, a) {
-    return +a.pupScore - +b.pupScore;
->>>>>>> 49b141cbfe5ee05a4b261d9f88570cc05448e760
-=======
-
->>>>>>> 71a8fd5cea34c1b7e0e0b5bb9145bb68019f1a28
   });
 }
 // In order for a dog to be considered for the topDog array, the size must match
@@ -127,7 +99,6 @@ function selectTopDogs() {
     i++;
   }
 }
-
 function displayTopDogs() {
   var resultPic = document.getElementById('result-pic');
   var resultPic2 = document.getElementById('result-pic2');
@@ -138,7 +109,6 @@ function displayTopDogs() {
   resultPic.addEventListener('click', SelectedZero);
   resultPic2.addEventListener('click', SelectedOne);
   resultPic3.addEventListener('click', SelectedTwo);
-
 }
 //Handle/Determine Different Selections
 function SelectedZero() {
@@ -150,15 +120,12 @@ function SelectedOne() {
 function SelectedTwo() {
   userSelection(2);
 }
-
 //Handle Selection
 function userSelection(selection) {
   console.log('User selected ' + topDogs[selection].breed);
-
   //Output Totals
   var breedDesc = document.getElementById('breedDesc');
   breedDesc.textContent = 'Breed Description';
-
   //Append each list line
   //Append each list line
   var liEl = document.createElement('li');
@@ -168,7 +135,6 @@ function userSelection(selection) {
   liEl.textContent = topDogs[selection].pupDesc;
   breedDesc.appendChild(liEl);
 }
-
 //Create listener to clear local storage on command.
 var clearLS = document.getElementById('clearStorage');
 clearLS.addEventListener('click', function() {
