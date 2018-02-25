@@ -26,6 +26,8 @@ function getQuizResults(event) {
   //Take Checkpoint:  Save results to local storage
   var strQuizResults = JSON.stringify(quizResults);
   localStorage.setItem('quizResults', strQuizResults);
+  window.location.href="results.html";
+
   // var strNumSelections = JSON.stringify(numSelections);
   // localStorage.setItem('numselections', strNumSelections);
 
