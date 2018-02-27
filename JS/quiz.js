@@ -28,22 +28,6 @@ function getQuizResults(event) {
   localStorage.setItem('quizResults', strQuizResults);
   window.location.href="results.html";
 
-  // var strNumSelections = JSON.stringify(numSelections);
-  // localStorage.setItem('numselections', strNumSelections);
-
-  // var minCust = parseInt(event.target.minCust.value);
-
-
-  //Verify that we have valid values, Exit if error
-  //Required field validation now handled by HTML5
-  //if (!locName || !minCust || !maxCust || !avgSale) {
-  //  return alert('Must enter a value in each field!');
-  //}
-//   if (minCust > maxCust) {
-//     return alert('Minimum Customers must be less than or equal to Maximum.');
-  // }
-
-
 }
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Event listener for comment submission form
