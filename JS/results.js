@@ -32,12 +32,21 @@ function Dog(breed, sizeOfPup, pupLifestyle, allergies, pupService, noiseToleran
 //**********FUNCTIONS START HERE *****************/
 //Build Objects
 function instantiateDogs() {
-  new Dog('Newfoundland', 'large' , 'sedentary', 'yes', 'yes', 'no-barking', 'some-fur', 'newfy.jpg', 'NF Description');
+  
   new Dog('Smooth Coat Dachsund', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'min-fur', 'doxie.jpg', 'Dach Description');
-  new Dog('Golden Retriever', 'large' , 'active', 'yes', 'yes', 'some-barking', 'some-fur', 'golden.jpg', 'GR Description');
   new Dog('Bichon Frise', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'some-fur', 'bichon.jpg', 'BF Description');
+  new Dog('Shih-Tzu', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'some-fur', 'shih.png', 'Shih Description');
+  new Dog('Toy Poodle', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'some-fur', 'toypoo.jpg', 'TP Description');
+  new Dog('Pug', 'small' , 'sedentary', 'yes', 'no', 'no-barking', 'min-fur', 'pug.jpg', 'Pug Description');
+  new Dog('Beagle', 'small' , 'sedentary', 'no', 'no', 'some-barking', 'min-fur', 'beagle.jpg', 'Beagle Description');
+  new Dog('Cavalier King Charles Spaniel', 'small' , 'sedentary', 'no', 'no', 'no-barking', 'some-fur', 'cav.jpg', 'Cav Description');
+  new Dog('Smooth Coat Chihuahua', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'min-fur', 'chi.jpg', 'Chi Description');
+  new Dog('French Bulldog', 'small' , 'somewhat-active', 'no', 'no', 'no-barking', 'min-fur', 'french.jpg', 'Frenchie Description');
+  new Dog('Pomeranian', 'small' , 'somewhat-active', 'yes', 'no', 'some-barking', 'some-fur', 'pom.jpg', 'Pom Description');
+  
 
   new Dog('Basset Hound', 'medium' , 'sedentary', 'yes', 'no', 'some-barking', 'min-fur', 'basset.jpg', 'BF Description');
+  new Dog('Corgi', 'medium' , 'somewhat-active', 'yes', 'yes', 'some-barking', 'some-fur', 'corgi.jpg', 'Corgi Description');
   new Dog('Bull Dog', 'medium' , 'sedentary', 'yes', 'no', 'some-barking', 'min-fur', 'bulldog.jpg', 'BF Description');
   new Dog('Miniature Terrier', 'medium' , 'somewhat-active', 'no', 'no', 'some-barking', 'min-fur', 'miniterrier.jpg', 'BF Description');
   new Dog('Whippet', 'medium' , 'somewhat-active', 'yes', 'no', 'some-barking', 'min-fur', 'whippet.jpg', 'BF Description');
@@ -49,10 +58,15 @@ function instantiateDogs() {
   new Dog('Border Collie', 'medium' , 'active', 'yes', 'yes', 'some-barking', 'some-fur', 'bordercollie.jpg', 'BF Description');
 
   new Dog('Mastiff', 'large' , 'sedentary', 'yes', 'no', 'some-barking', 'some-fur', 'mastiff.jpg', 'BF Description');
+  new Dog('Golden Retriever', 'large' , 'active', 'yes', 'yes', 'some-barking', 'some-fur', 'golden.jpg', 'GR Description');
+  new Dog('Standard Poodle', 'large' , 'somewhat-active', 'no', 'yes', 'some-barking', 'some-fur', 'poodle.jpg', 'SP Description');
+  new Dog('Newfoundland', 'large' , 'sedentary', 'yes', 'yes', 'no-barking', 'some-fur', 'newfy.jpg', 'NF Description');
   new Dog('Bloodhound', 'large' , 'sedentary', 'yes', 'no', 'some-barking', 'some-fur', 'bloodhound.jpg', 'BF Description');
   new Dog('Great Dane', 'large' , 'somewhat-active', 'yes', 'yes', 'some-barking', 'some-fur', 'greatdane.jpg', 'BF Description');
   new Dog('Rottweiler', 'large' , 'active', 'yes', 'yes', 'some-barking', 'some-fur', 'rottweiler.jpg', 'BF Description');
   new Dog('Labrador Retriever', 'large' , 'active', 'yes', 'yes', 'some-barking', 'some-fur', 'labretriever.jpg', 'BF Description');
+  new Dog('German Shepherd', 'large' , 'active', 'yes', 'yes', 'some-barking', 'some-fur', 'shep.jpg', 'Shep Description');
+  new Dog('Bernese Mountain Dog', 'large' , 'active', 'yes', 'yes', 'some-barking', 'some-fur', 'bernese.jpg', 'Bernese Description');
 
 }
 instantiateDogs();
