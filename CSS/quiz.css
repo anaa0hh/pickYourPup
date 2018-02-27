@@ -15,6 +15,11 @@ h2 {
     font-size: 24px;
     color: darkblue;
 }
+
+fieldset {
+    border: 0;
+}
+
 #quiz-area {
     width: 80%;
     /* height: 400px; */
