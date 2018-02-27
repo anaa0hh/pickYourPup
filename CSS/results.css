@@ -1,5 +1,49 @@
 /* Styling for results.html */
 
+body {
+    width: 80%;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: darkblue;
+}
+
 img {
     width:200px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
+}
+
+#matches {
+    width: 80%;
+    height: 500px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: teal;
+    padding: 1%;
+    vertical-align: bottom;
+    display: table-cell;
+}
+
+
+#descriptionarea {
+    width: 80%;
+    margin-top: 5px;
+    border-width: 5px;
+    padding: 1%;
+    border-style: solid;
+    border-color: teal;
+}
+#descriptionarea > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+}
+#descriptionarea > h2,li,p {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    color: darkblue;
 }
