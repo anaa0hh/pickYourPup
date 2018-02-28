@@ -18,36 +18,32 @@ h2 {
     font-size: 24px;
     color: darkblue;
 }
+
+#matcharea {
+    width: 80%;
+    height: 475px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: teal;
+    padding: 1%;
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: bottom;
+    /* display: table-cell; */
+}
 img {
-    width:200px;
+    width:250px;
     border: 2px;
     border-style: solid;
     border-color: black;
     display: inline-block;
 }
-
-
-#matcharea {
-    width: 80%;
-    height: 400px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: teal;
-    padding: 1%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-#matches {
-    /* width: 80%;
-    height: 400px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: teal;
-    padding: 1%; */
-    vertical-align: bottom;
-    display: table-cell;
-}
+/* #matches {
+    /* vertical-align: bottom;
+    display: table-cell; */
+    /* display: inline-block;
+} */ 
 
 #descriptionarea {
     width: 80%;
@@ -64,8 +60,25 @@ img {
     font-family: Arial, Helvetica, sans-serif;
     color: darkblue;
 }
+#breedDesc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: darkblue;
+    line-height: 40px;
+}
 #descriptionarea > h2,li,p {
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
     color: darkblue;
+    line-height: 24px;
+}
+button {
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: lightseagreen;
+    transition: 350ms;
+}
+button:hover {
+    background: yellow
 }
