@@ -1,1 +1,133 @@
 /* THIS IS THE STYLING FOR aboutus.html */
+
+*{
+    background-color: lightblue;
+    background: url('img/pawpaw.jpg');
+}
+
+#header {
+    background: url('img/pawpaw.jpg');
+}
+h1 {
+    color: navy;
+    background: url('img/pawpaw.jpg');
+    text-align:center;
+    font-size: 48px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+h2 {
+    color: orange;
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+h3 {
+    color: orange;
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#contact-fields {
+    height: 50%;
+    width: 50%;
+}
+
+
+ 
+
+
+
+.us {
+    height: 200px;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    }
+
+
+
+#nav {
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Crimson Text', serif;
+
+    
+    
+
+}
+
+.uglyfish-pic {
+
+        position: absolute;
+        top: 200px;
+        right: 30px;
+        width: 200px;
+        height: 100px;
+        border: 3px solid rgb(173, 61, 33);
+    }
+
+
+.cookie-pic {
+    
+        position: absolute;
+        top: 120px;
+        left: 60px;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73AD21;
+    
+}
+
+#content {
+    position: absolute;
+    top: 400px;
+    right: 15px;
+    width: 400px;
+    height: 200px;
+    
+}
+
+#locations {
+    position: absolute;
+    bottom: 100px;
+    border-color: black;
+    left: 40px;
+    width: 300px;
+    height: 200px;
+
+
+
+}
+
+.chinook-pic {
+    position: absolute;
+    top: 650px;
+    right: 15px;
+    width: 300px;
+    height: 150px;
+    border: 3px solid #73AD21;
+}
+
+
+.family-pic {
+    height: 200px;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    }
+
+.cutter-pic {
+    position: absolute;
+    top: 650px;
+    left: 60px;
+    width: 200px;
+    height: 100px;
+    border: 3px solid red;
+
+}
+
+   

@@ -26,24 +26,13 @@ function getQuizResults(event) {
   //Take Checkpoint:  Save results to local storage
   var strQuizResults = JSON.stringify(quizResults);
   localStorage.setItem('quizResults', strQuizResults);
-  // var strNumSelections = JSON.stringify(numSelections);
-  // localStorage.setItem('numselections', strNumSelections);
-
-  // var minCust = parseInt(event.target.minCust.value);
-
-
-  //Verify that we have valid values, Exit if error
-  //Required field validation now handled by HTML5
-  //if (!locName || !minCust || !maxCust || !avgSale) {
-  //  return alert('Must enter a value in each field!');
-  //}
-//   if (minCust > maxCust) {
-//     return alert('Minimum Customers must be less than or equal to Maximum.');
-  // }
-
+  window.location.href="results.html";
 
 }
+
+
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Event listener for comment submission form
 var quizQuestions = document.getElementById('quiz-questions');
 quizQuestions.addEventListener('submit', getQuizResults);
+
