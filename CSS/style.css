@@ -1,60 +1,48 @@
-#grad1 {
+section {
+    background: linear-gradient(rgb(5, 93, 255), white);
     margin-top: 25px;
-    background-color:white;
+}
 
-  }
+
 body {
     max-width: 800px;
     margin: auto;
-    background: linear-gradient(to bottom right, #3e81cc, white);
+    background: white;
 
 }
 
-.navbar {
-    text-align: center;
-    font-family: 'Patrick Hand', cursive;
-    padding-left:20px;
-    float: left;
-    /* position: relative;
-    top: 0px;
-    left: -89px; */
-    font-size: 16px;
+
+.pyplogo {
+    width: 150px;
 }
 
-.navbar a {
-    margin-right: 15px;
-    text-decoration: none;
-    font-size:14px;
-    color: black;
-}
-
-.navbar a:hover {
-    color: rgb(255, 255, 255);
-}
- 
-#pyplogo {
-    width:225px;
+.pyplogo {
+    width:110px;
     position: relative;
     top: -371px;
     left: 24px;
+    margin-bottom: -60px;
 }
 
 p {
-    font-family: 'Nanum Pen Script', cursive;
+    margin-top: 0;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: 'Quicksand', sans-serif;
 }
 
-#pupride {
- 
-    margin-bottom: 20px;
+#pupride { 
     width: 800px;
     float:right;
 }
 
 
-p {
-    margin: 10px;
-    font-family: 'Patrick Hand', cursive;
+#quiz {
+    width: 325px;
+    float:right;
+    margin-top: -25px;
 }
+
 
 
 
