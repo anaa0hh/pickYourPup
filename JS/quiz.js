@@ -29,7 +29,10 @@ function getQuizResults(event) {
   window.location.href="results.html";
 
 }
+
+
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Event listener for comment submission form
 var quizQuestions = document.getElementById('quiz-questions');
 quizQuestions.addEventListener('submit', getQuizResults);
+
