@@ -22,17 +22,22 @@ function Dog(breed, sizeOfPup, pupLifestyle, allergies, pupService, noiseToleran
 //Retrieve quiz results
 (function getLocalStorage() {
   if (localStorage.quizResults) {
-    // console.log('we want quiz results');
     var strQuizResults = localStorage.getItem('quizResults');
     quizResults = JSON.parse(strQuizResults);
-    // console.log(quizResults);
   }
 })();
-// sort by value
+
+instantiateDogs();
+scorePups();
+sortPups();
+console.log('postsort ', allPups);
+selectTopDogs();
+displayTopDogs();
+console.log('topDogs ', topDogs);
 //**********FUNCTIONS START HERE *****************/
-//Build Objects
+
 function instantiateDogs() {
-  
+
   new Dog('Smooth Coat Dachsund', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'min-fur', 'doxie.jpg', 'Dachshunds are fearless, loving, and upbeat dogs that can be miniature or standard sized. These short legged dogs are protective, but thrive on close human companionship. Doxies make great companions for city dwellers, families with older children, singles, and those who enjoy the outdoors. Moderate daily exercise will help them stay healthy and happy.');
   new Dog('Bichon Frise', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'some-fur', 'bichon.jpg', 'Bichon Frises are alert, lively, and quirky, small dogs. These lap dogs love to show off and receive attention which makes them great with children, strangers, and other dogs. These divas are adaptable to live in most climates, but may show signs of separation anxiety if left alone. Bichons make great companions for families, apartment dwellers, and those with allergies. A short daily walk or play session is enough exercise for Bichons.');
   new Dog('Shih-Tzu', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'some-fur', 'shih.png', 'Shih Tzus are lively, playful, and sometimes stubborn small dogs. The Chinese Lion Dog (nickname) is affectionate toward their family, and good with children, other dogs, and strangers. These furry companions are indoor dogs that don’t do well with hot weather, but they make great pets for seniors, families with older children, and people with allergies because they do not shed. Despite their high energy, they only need a short walk or play session every day.');
@@ -43,7 +48,7 @@ function instantiateDogs() {
   new Dog('Smooth Coat Chihuahua', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'min-fur', 'chi.jpg', 'Chihuahuas are spunky, animated, and vocal, small dogs. These confident dogs are known for their bark, and most are wary of strangers and other dogs if not properly socialized and trained. Some are timid and temperamental, and might not be good with young children. They do best indoors with plenty of attention, and struggle to stay warm in cold climates. This breed is small and adapts well, which makes them great travelers. Sometimes known as Chis, they make great companions for senior citizens, singles, and apartment dwellers. As such lively dogs, they need plenty of time every day to run around inside or explore their fenced yard.');
   new Dog('French Bulldog', 'small' , 'somewhat-active', 'no', 'no', 'no-barking', 'min-fur', 'french.jpg', 'French Bulldogs are comical, friendly, and entertaining, small dogs. This small but sturdy, short nosed breed is typically reserved around strangers, but gets along great with other pets. Frenchies don’t do well in the heat, are incapable of swimming, and require little exercise. Because of this, they make great companions for just about anyone living in a cool climate, especially those living in an apartment or small home.');
   new Dog('Pomeranian', 'small' , 'somewhat-active', 'yes', 'no', 'some-barking', 'some-fur', 'pom.jpg', 'Pomeranians are eager to learn, playful, and adventurous, toy dogs. Poms are bold and curious, they tend to be reserved around or bark at strangers and others dogs, so they need sufficient socialization from puppyhood. These bouncy and confident dogs make great family pets, but can be snappy with small children. Although they are energetic, they are too family oriented to live outdoors. Ideal owners for Poms are singles, seniors, apartment dwellers, and those who live in the city. Daily walks and play sessions are ideal to keep these fun and fluffy dogs calmer while indoors.');
-  
+
 
   new Dog('Basset Hound', 'medium' , 'sedentary', 'yes', 'no', 'some-barking', 'min-fur', 'basset.jpg', 'Basset Hounds are good natured, mellow, and affectionate, medium sized dogs. This short legged canine gets along well with children and other pets. They do best living indoors but still need access to the outdoors. Bassets make great companions for singles, active individuals, families, and people living in the city. This slow-moving breed is content living a lazy life, but still really needs moderate daily exercise.');
   new Dog('Corgi', 'medium' , 'somewhat-active', 'yes', 'yes', 'some-barking', 'some-fur', 'corgi.jpg', 'Pembroke Welsh Corgis are extraordinary pets. While it is interesting to learn about the breeding purpose of Pembroke Welsh Corgis, their genetics actually influence health, outward appearance and behavior. Some behaviors make the Pembroke Welsh Corgi and some can be quite irritating!');
@@ -69,13 +74,7 @@ function instantiateDogs() {
   new Dog('Bernese Mountain Dog', 'large' , 'active', 'yes', 'yes', 'some-barking', 'some-fur', 'bernese.jpg', 'Bernese Mountain Dogs are sensitive, lovable, and loyal, large dogs. Berners are a bit reserved around strangers but they get along with dogs and other animals. These dogs are prone to boredom and should not be left alone for long periods of time. They do well in cold climates, and have a hard time in the heat. Berners make great companions for families and those who love the outdoors. This breed requires moderate everyday exercise such as a walk or hike.');
 
 }
-instantiateDogs();
-scorePups();
-sortPups();
-console.log('postsort ', allPups);
-selectTopDogs();
-displayTopDogs();
-console.log('topDogs ', topDogs);
+
 function scorePups() {
   for (var i=0; i < allPups.length; i++) {
     //we are starting at one because we don't want to incluse the first question in score
@@ -157,13 +156,13 @@ function userSelection(selection) {
   console.log('User selected ' + topDogs[selection].breed);
   //Output Totals
   var breedDesc = document.getElementById('breedDesc');
-  breedDesc.textContent = 'Breed Description';
-  //Append each list line
-  //Append each list line
+  breedDesc.textContent = topDogs[selection].breed;
+
+  //Append Breed and Description
+  // var liEl = document.createElement('li');
+  // liEl.textContent = topDogs[selection].breed;
+  // breedDesc.appendChild(liEl);
   var liEl = document.createElement('li');
-  liEl.textContent = topDogs[selection].breed;
-  breedDesc.appendChild(liEl);
-  liEl = document.createElement('li');
   liEl.textContent = topDogs[selection].pupDesc;
   breedDesc.appendChild(liEl);
 }
@@ -178,7 +177,7 @@ var returnToQuiz = document.getElementById('returnQuiz');
 
 returnToQuiz.addEventListener('click', function() {
   console.log('returnToQuiz');
-  window.location.href="quiz.html";
- 
+  window.location.href='quiz.html';
+
 });
 
