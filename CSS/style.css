@@ -11,14 +11,10 @@ body {
 
 }
 
-
-.pyplogo {
-    width: 150px;
-}
-
 .pyplogo {
     width:110px;
     position: relative;
+    border:1px black solid;
     top: -371px;
     left: 24px;
     margin-bottom: -60px;
