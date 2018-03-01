@@ -18,7 +18,7 @@ h1 {
 
 }
 
-section h2 {
+h2 {
     color: orange;
     font-size: 24px;
     font-family: 'Quicksand', sans-serif;
@@ -29,8 +29,11 @@ section h2 {
 
 h3 {
     color: orange;
-    font-size: 1.5vw;
+    font-size: 20px;
     font-family: 'Quicksand', sans-serif;
+    margin-left: -17%;
+    position: fixed;
+    margin-top: -3%;
 }
 
 p {
@@ -52,36 +55,31 @@ p {
    
     
 }
-
-
- .us{
+.us {
     height: 100px;
     width: 200px;
     /* position: relative; */
-    border: 5px solid navy;
+    border: 3px solid navy;
     float: left;
     padding: 3%;
-    }
+    margin-top: 1%;
+}
 
 .logo{
-    height: 100px;
-    width: 150px;
+    height: 75px;
+    width: 100px;
     float: left;
-    /* position: relative; */
+    position: absolute;
+    left: 2%;
+}
+
+input {
+    height: 40%;
+    width: 75%;
 }
 
 
 
-#nav {
-    color: black;
-    text-align: center;
-    font-size: 24px;
-    font-family: 'Crimson Text', serif;
-
-    
-    
-
-}
 
 .wagging {
     
@@ -96,5 +94,17 @@ p {
     border: 3px solid navy;
 
 }
+
+fieldset {
+    width: 90%;
+    height: 40%;
+    margin-left: -75%;
+    margin-bottom: 15%;
+}
+
+li {
+    margin-left: 36%;
+}
+
 
 
