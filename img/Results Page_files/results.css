@@ -11,7 +11,6 @@ h1 {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 36px;
-    margin-bottom:-20px;
     color: darkblue;
 }
 h2 {
@@ -21,31 +20,9 @@ h2 {
     color: darkblue;
 }
 
-img {
-    height:190px;
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-    display: inline-block;
+img#result-pic {
+    margin-left: 5px;
 }
-
-img#result-pic{
-    width:31%;
-    float:left;
-    margin-left:3%;
-}
-img#result-pic2{
-    width:31%;
-    margin-left:3px;
-    float:left;
-}
-img#result-pic3{
-    width:31%;
-    float:left;
-    margin-left:3px;
-}
-
-
 
 #matcharea {
     width: 800px;
@@ -60,7 +37,13 @@ img#result-pic3{
     vertical-align: bottom;
     /* display: table-cell; */
 }
-
+img {
+    height:205px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
+}
 /* #matches {
     /* vertical-align: bottom;
     display: table-cell; */
@@ -104,23 +87,3 @@ button {
 button:hover {
     background: lightskyblue;
 }
-
-
-footer {
-    margin-right: -40px;
-    width: 375px;
-    margin-top: 10px;
-    margin-left: 265px;
-    }
-    
-    footer a {
-        text-decoration: none;
-        font-family: 'Quicksand', sans-serif;
-    }
-    
-    img#pawheart {
-        width: 23px;
-        height:20px;
-        border:none;
-    }
-
