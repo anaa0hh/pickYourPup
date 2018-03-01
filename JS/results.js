@@ -5,7 +5,7 @@ var allPups = [];
 var topDogs = [];
 //Arrays for current and next selections
 //constructor for dogs
-function Dog(breed, sizeOfPup, pupLifestyle, allergies, pupService, noiseTolerance, furLength, filePath, pupDesc) {
+function Dog(breed, sizeOfPup, pupLifestyle, allergies, pupService, noiseTolerance, furLength, filePath, linkDesc, pupLink, pupDesc) {
   this.breed = breed;
   this.sizeOfPup = sizeOfPup;
   this.pupLifestyle = pupLifestyle;
@@ -15,6 +15,8 @@ function Dog(breed, sizeOfPup, pupLifestyle, allergies, pupService, noiseToleran
   this.furLength = furLength;
   this.pupScore = 0;
   this.filePath=filePath;
+  this.linkDesc=linkDesc;
+  this.pupLink=pupLink;
   this.pupDesc=pupDesc;
   allPups.push(this);
 }
@@ -38,7 +40,7 @@ console.log('topDogs ', topDogs);
 
 function instantiateDogs() {
 
-  new Dog('Smooth Coat Dachsund', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'min-fur', 'doxie.jpg', 'Dachshunds are fearless, loving, and upbeat dogs that can be miniature or standard sized. These short legged dogs are protective, but thrive on close human companionship. Doxies make great companions for city dwellers, families with older children, singles, and those who enjoy the outdoors. Moderate daily exercise will help them stay healthy and happy.');
+  new Dog('Smooth Coat Dachsund', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'min-fur', 'doxie.jpg', 'Dachsund Rescue', 'http://www.drna.org/', 'Dachshunds are fearless, loving, and upbeat dogs that can be miniature or standard sized. These short legged dogs are protective, but thrive on close human companionship. Doxies make great companions for city dwellers, families with older children, singles, and those who enjoy the outdoors. Moderate daily exercise will help them stay healthy and happy. http://www.drna.org/');
   new Dog('Bichon Frise', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'some-fur', 'bichon.jpg', 'Bichon Frises are alert, lively, and quirky, small dogs. These lap dogs love to show off and receive attention which makes them great with children, strangers, and other dogs. These divas are adaptable to live in most climates, but may show signs of separation anxiety if left alone. Bichons make great companions for families, apartment dwellers, and those with allergies. A short daily walk or play session is enough exercise for Bichons.');
   new Dog('Shih-Tzu', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'some-fur', 'shih.png', 'Shih Tzus are lively, playful, and sometimes stubborn small dogs. The Chinese Lion Dog (nickname) is affectionate toward their family, and good with children, other dogs, and strangers. These furry companions are indoor dogs that don’t do well with hot weather, but they make great pets for seniors, families with older children, and people with allergies because they do not shed. Despite their high energy, they only need a short walk or play session every day.');
   new Dog('Toy Poodle', 'small' , 'somewhat-active', 'no', 'no', 'some-barking', 'some-fur', 'toypoo.jpg', 'Toy Poodles are extraordinary pets. While it is interesting to learn about the breeding purpose of Toy Poodles, their genetics actually influence health, outward appearance and behavior. Some behaviors make the Toy Poodle and some can be quite irritating! Understanding her unique needs will help you keep her healthy and will create a stronger bond between the two of you. Explore this page to learn more about where she came, which health conditions are a risk to her and how to keep her feeling her best.');
@@ -158,12 +160,17 @@ function userSelection(selection) {
   var breedDesc = document.getElementById('breedDesc');
   breedDesc.textContent = topDogs[selection].breed;
 
-  //Append Breed and Description
-  // var liEl = document.createElement('li');
-  // liEl.textContent = topDogs[selection].breed;
-  // breedDesc.appendChild(liEl);
+ 
   var liEl = document.createElement('li');
   liEl.textContent = topDogs[selection].pupDesc;
+  breedDesc.appendChild(liEl);
+
+  var liEl = document.createElement('li');
+  liEl.textContent = topDogs[selection].pupLink;
+  breedDesc.appendChild(liEl);
+
+  var liEl = document.createElement('li');
+  liEl.textContent = topDogs[selection].linkDesc;
   breedDesc.appendChild(liEl);
 }
 //Create listener to clear local storage on command.
