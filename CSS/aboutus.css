@@ -1,51 +1,74 @@
 /* THIS IS THE STYLING FOR aboutus.html */
 
-*{
-    background-color: lightblue;
-    background: url('img/pawpaw.jpg');
-}
 
-#header {
-    background: url('img/pawpaw.jpg');
+
+body {
+    max-width: 800px;
+    margin: auto;
+    background: linear-gradient(to bottom right, #3e81cc, white);
+
+
 }
 h1 {
-    color: navy;
-    background: url('img/pawpaw.jpg');
+    color: green;
+    font: bold;
     text-align:center;
-    font-size: 48px;
+    font-size: 60px;
     font-family: 'Quicksand', sans-serif;
 
 }
 
-h2 {
+section h2 {
     color: orange;
     font-size: 24px;
     font-family: 'Quicksand', sans-serif;
+    margin-left: 36%;
+
 
 }
 
 h3 {
     color: orange;
-    font-size: 24px;
+    font-size: 1.5vw;
     font-family: 'Quicksand', sans-serif;
 }
 
+p {
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 36%;
+}
+
+#content{
+    width: 10px;
+    height: 10px;
+    margin-left: 300px;
+    position: relative;
+    float: left;
+}
+
 #contact-fields {
-    height: 50%;
-    width: 50%;
+    height: 30%;
+    width: 30%;
+   
+    
 }
 
 
- 
-
-
-
-.us {
-    height: 200px;
-    width: 400px;
-    display: block;
-    margin: 0 auto;
+ .us{
+    height: 100px;
+    width: 200px;
+    /* position: relative; */
+    border: 5px solid navy;
+    float: left;
+    padding: 3%;
     }
+
+.logo{
+    height: 100px;
+    width: 150px;
+    float: left;
+    /* position: relative; */
+}
 
 
 
@@ -60,74 +83,18 @@ h3 {
 
 }
 
-.uglyfish-pic {
-
-        position: absolute;
-        top: 200px;
-        right: 30px;
-        width: 200px;
-        height: 100px;
-        border: 3px solid rgb(173, 61, 33);
-    }
-
-
-.cookie-pic {
+.wagging {
     
-        position: absolute;
-        top: 120px;
-        left: 60px;
-        width: 200px;
-        height: 100px;
-        border: 3px solid #73AD21;
-    
-}
-
-#content {
-    position: absolute;
-    top: 400px;
-    right: 15px;
-    width: 400px;
-    height: 200px;
-    
-}
-
-#locations {
-    position: absolute;
-    bottom: 100px;
-    border-color: black;
-    left: 40px;
-    width: 300px;
-    height: 200px;
-
-
-
-}
-
-.chinook-pic {
-    position: absolute;
-    top: 650px;
-    right: 15px;
-    width: 300px;
-    height: 150px;
-    border: 3px solid #73AD21;
-}
-
-
-.family-pic {
-    height: 200px;
-    width: 400px;
-    display: block;
-    margin: 0 auto;
-    }
-
-.cutter-pic {
-    position: absolute;
-    top: 650px;
-    left: 60px;
+    position: relative;
+    float: right;
+    margin-top: 31%;
+    left: 15%;
+    bottom: 120px;
+    right: 60px;
     width: 200px;
     height: 100px;
-    border: 3px solid red;
+    border: 3px solid navy;
 
 }
 
-   
+
