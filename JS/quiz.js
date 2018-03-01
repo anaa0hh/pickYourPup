@@ -53,7 +53,7 @@ var quizResults = [];
 
 // This function handles the submission of quiz answers
 function getQuizResults(event) {
-  event.preventDefault(); //prevents page reload
+  event.preventDefault(); //prevent page reload
 
   //Retrieve values from form
   var sizeOfPup = event.target.sizeOfPup.value;
