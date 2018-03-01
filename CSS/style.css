@@ -1,1 +1,44 @@
-/* THIS IS THE STYLING FOR INDEX.HTML */
+section {
+    background: linear-gradient(rgb(5, 93, 255), white);
+    margin-top: 25px;
+}
+
+
+body {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+
+}
+
+.pyplogo {
+    width:110px;
+    position: relative;
+    border:1px black solid;
+    top: -371px;
+    left: 24px;
+    margin-bottom: -60px;
+}
+
+p {
+    margin-top: 0;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#pupride { 
+    width: 800px;
+    float:right;
+}
+
+
+#quiz {
+    width: 325px;
+    float:right;
+    margin-top: -25px;
+}
+
+
+
+

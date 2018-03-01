@@ -1,1 +1,110 @@
 /* THIS IS THE STYLING FOR aboutus.html */
+
+
+
+body {
+    max-width: 800px;
+    margin: auto;
+    background: linear-gradient(to bottom right, #3e81cc, white);
+
+
+}
+h1 {
+    color: green;
+    font: bold;
+    text-align:center;
+    font-size: 60px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+h2 {
+    color: orange;
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 36%;
+
+
+}
+
+h3 {
+    color: orange;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: -17%;
+    position: fixed;
+    margin-top: -3%;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 36%;
+}
+
+#content{
+    width: 10px;
+    height: 10px;
+    margin-left: 300px;
+    position: relative;
+    float: left;
+}
+
+#contact-fields {
+    height: 30%;
+    width: 30%;
+   
+    
+}
+.us {
+    height: 100px;
+    width: 200px;
+    /* position: relative; */
+    border: 3px solid navy;
+    float: left;
+    padding: 3%;
+    margin-top: 1%;
+}
+
+.logo{
+    height: 75px;
+    width: 100px;
+    float: left;
+    position: absolute;
+    left: 2%;
+}
+
+input {
+    height: 40%;
+    width: 75%;
+}
+
+
+
+
+.wagging {
+    
+    position: relative;
+    float: right;
+    margin-top: 31%;
+    left: 15%;
+    bottom: 120px;
+    right: 60px;
+    width: 200px;
+    height: 100px;
+    border: 3px solid navy;
+
+}
+
+fieldset {
+    width: 90%;
+    height: 40%;
+    margin-left: -75%;
+    margin-bottom: 15%;
+}
+
+li {
+    margin-left: 36%;
+}
+
+
+

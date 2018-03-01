@@ -4,56 +4,73 @@
 <head>
  
     <title>Pick Your Pup Quiz</title>
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="quiz.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/quiz.css" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Patrick+Hand|Quicksand" rel="stylesheet">
 
+    
 </head>
 <body>
+        
+<h1>Pick Your Pup Breed Selection Quiz</h1>
+<h2>By answering these questions, our skillfully crafted algorithims shall select the perfect breeds for you.</h2>
 
-        <form id="quiz-questions">
+    <section id="quiz-area">
+        <form id="quiz-questions" action="results.html">
+            
             <fieldset>
 
             <p>What size dog breed would you like to find?<br>
-            <input type="radio" name="sizeOfPup" value="small"> Small<br>
+            <input type="radio" name="sizeOfPup" value="small" required="required"> Small<br>
             <input type="radio" name="sizeOfPup" value="medium"> Medium<br>
             <input type="radio" name="sizeOfPup" value="large"> Large<br>
             </p>
    
             <p>How would you describe your lifestyle?<br>
-            <input type="radio" name="pupLifestyle" value="sedentary"> I'm a couch potato<br>
+            <input type="radio" name="pupLifestyle" value="sedentary" required="required"> I'm a couch potato<br>
             <input type="radio" name="pupLifestyle" value="somewhat-active"> Somewhat Active<br>
             <input type="radio" name="pupLifestyle" value="active"> Active<br>
             </p>
 
             <p>Do you have a history of pet allergies?<br>
-            <input type="radio" name="allergies" value="yes"> Yes
-            <input type="radio" name="allergies" value="no"> No
+            <input type="radio" name="allergies" value="yes" required="required"> Yes<br>
+            <input type="radio" name="allergies" value="no"> No<br>
             </p>
 
             <p>Is this dog going to be utilized as a service dog? <br>
-            <input type="radio" name="pupService" value="yes"> Yes.<br>
-            <input type="radio" name="pupService" value="no"> No.<br>
+            <input type="radio" name="pupService" value="yes" required="required"> Yes<br>
+            <input type="radio" name="pupService" value="no"> No<br>
             </p>
 
             <p>In terms of barking, how much noise can you tolerate?<br>
-            <input type="radio" name="noiseTolerance" value="no-barking"> None, I prefer a dog that doesn't bark much.<br>
+            <input type="radio" name="noiseTolerance" value="no-barking" required="required"> Very little, I prefer a dog that doesn't bark much.<br>
             <input type="radio" name="noiseTolerance" value="some-barking"> Some barking doesn't bother me too much.<br>
             <input type="radio" name="noiseTolerance" value="dont-care"> Barking is not an issue for me!
             </p>
 
-    
             <p>For your dog breed, do you prefer a dog with ...<br>
-            <input type="radio" name="furLength" value="min-fur"> As little fur as possible.<br>
+            <input type="radio" name="furLength" value="min-fur" required="required"> As little fur as possible.<br>
             <input type="radio" name="furLength" value="some-fur"> Furry is not a problem!<br>
             <input type="radio" name="furLength" value="fur-dont-care"> It doesn't matter! <br>
             </p>
+
             
-        
-            <input type="submit" name="submit" value="Submit Quiz">
+            <input id="submit-button" type="submit" name="submit" value="Submit Quiz">
+
             </fieldset>
+
         </form>
+    </section>
 
-
-    
     <script src="JS/quiz.js"></script>
+
+<footer>
+    <img id="pawheart" src="img/pawheart.png">
+    <a href="index.html">Home</a>
+    <img id="pawheart" src="img/pawheart.png">
+    <a href="aboutus.html">About Us</a>
+    <img id="pawheart" src="img/pawheart.png">
+    <a href="resources.html">Resources</a>
+   
+ </footer>
 </body>
 </html>

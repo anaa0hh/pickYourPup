@@ -1,1 +1,84 @@
+/* COMMON STYLING AREA */
+
 /* Styling for results.html */
+
+body {
+    width: 80%;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: darkblue;
+}
+h2 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    color: darkblue;
+}
+
+#matcharea {
+    width: 80%;
+    height: 475px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: teal;
+    padding: 1%;
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: bottom;
+    /* display: table-cell; */
+}
+img {
+    width:250px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
+}
+/* #matches {
+    /* vertical-align: bottom;
+    display: table-cell; */
+    /* display: inline-block;
+} */ 
+
+#descriptionarea {
+    width: 80%;
+    margin-top: 5px;
+    border-width: 5px;
+    padding: 1%;
+    border-style: solid;
+    border-color: teal;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#descriptionarea > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+}
+#breedDesc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: darkblue;
+    line-height: 40px;
+}
+#descriptionarea > h2,li,p {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    color: darkblue;
+    line-height: 24px;
+}
+button {
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: lightseagreen;
+    transition: 350ms;
+}
+button:hover {
+    background: yellow
+}
