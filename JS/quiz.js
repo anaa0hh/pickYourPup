@@ -44,7 +44,7 @@ var quizResults = [];
   }
 })();
 
-// This function handles the addition of a new location
+// This function handles the submission of quiz answers
 function getQuizResults(event) {
   event.preventDefault(); //prevents page reload
 
@@ -56,7 +56,6 @@ function getQuizResults(event) {
   var noiseTolerance = event.target.noiseTolerance.value;
   var furLength = event.target.furLength.value;
 
-  console.log('getQuizResults'+getQuizResults);
   quizResults = [sizeOfPup, pupLifestyle, allergies, pupService, noiseTolerance, furLength];
   console.log('quizResults'+quizResults);
 
@@ -64,11 +63,9 @@ function getQuizResults(event) {
   var strQuizResults = JSON.stringify(quizResults);
   localStorage.setItem('quizResults', strQuizResults);
   window.location.href='results.html';
-
 }
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Event listener for comment submission form
 var quizQuestions = document.getElementById('quiz-questions');
 quizQuestions.addEventListener('submit', getQuizResults);
-
