@@ -53,7 +53,7 @@ var quizResults = [];
 
 // This function handles the submission of quiz answers
 function getQuizResults(event) {
-  event.preventDefault(); //prevents page reload
+  event.preventDefault(); //prevent page reload
 
   //Retrieve values from form
   var sizeOfPup = event.target.sizeOfPup.value;
@@ -69,12 +69,12 @@ function getQuizResults(event) {
   //Save quiz to local storage
   var strQuizResults = JSON.stringify(quizResults);
   localStorage.setItem('quizResults', strQuizResults);
-  
+
   //Transfer to Results page
   window.location.href='results.html';
 }
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++
-// Event listener for comment submission form
+// Event listener for quiz submission form
 var quizQuestions = document.getElementById('quiz-questions');
 quizQuestions.addEventListener('submit', getQuizResults);
