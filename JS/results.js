@@ -166,12 +166,20 @@ function userSelection(selection) {
   breedDesc.appendChild(liEl);
 
   var liEl = document.createElement('li');
-  liEl.textContent = topDogs[selection].pupLink;
+  var aEl = document.createElement('a');
+  var linkText = document.createTextNode(topDogs[selection].linkDesc);
+  aEl.appendChild(linkText);
+  aEl.title = topDogs[selection].linkDesc;
+  aEl.href = topDogs[selection].pupLink;
+  aEl.setAttribute('target', '_blank');
   breedDesc.appendChild(liEl);
+  liEl.appendChild(aEl);
+  // liEl.textContent = topDogs[selection].pupLink;
+  // breedDesc.appendChild(liEl);
 
-  var liEl = document.createElement('li');
-  liEl.textContent = topDogs[selection].linkDesc;
-  breedDesc.appendChild(liEl);
+  // var liEl = document.createElement('li');
+  // liEl.textContent = topDogs[selection].linkDesc;
+  // breedDesc.appendChild(liEl);
 }
 //Create listener to clear local storage on command.
 var clearLS = document.getElementById('clearStorage');
