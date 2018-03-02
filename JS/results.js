@@ -160,7 +160,7 @@ function userSelection(selection) {
   var breedDesc = document.getElementById('breedDesc');
   breedDesc.textContent = topDogs[selection].breed;
 
- 
+
   var liEl = document.createElement('li');
   liEl.textContent = topDogs[selection].pupDesc;
   breedDesc.appendChild(liEl);

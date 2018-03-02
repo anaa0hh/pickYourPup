@@ -7,6 +7,11 @@ body {
     margin: auto;
 }
 
+html {
+    background: linear-gradient(to bottom right, #3e81cc, white);
+
+}
+
 h1 {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
@@ -51,6 +56,7 @@ img#result-pic3{
     width: 800px;
     height: 295px;
     border-width: 5px;
+    background-color: white;
     border-style: solid;
     border-color: orange;
     padding: 1%;
@@ -71,6 +77,7 @@ img#result-pic3{
     width: 800px;
     margin-top: 5px;
     border-width: 5px;
+    background-color:white;
     padding: 1%;
     border-style: solid;
     border-color: orange;
@@ -111,6 +118,7 @@ footer {
     width: 375px;
     margin-top: 10px;
     margin-left: 265px;
+    margin-bottom: 20px;
     }
     
     footer a {
