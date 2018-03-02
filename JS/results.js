@@ -113,7 +113,7 @@ function selectTopDogs() {
     if(allPups[i].pupScore > 0 && quizResults[0] === allPups[i].sizeOfPup) {
       topDogs.push(allPups[i]);
     } else {
-      if (allPups[i] === 0) {
+      if (allPups[i].pupScore === 0) {
         endOfScoringDogs = true;
       }
     }
