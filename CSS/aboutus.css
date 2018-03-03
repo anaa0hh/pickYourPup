@@ -83,13 +83,12 @@ p {
     border:3px black solid;
     float: left;
     padding: 3%;
-    margin-top: 1%;
+    margin-top: 7%;
     margin-left: -10%;
 }
 
 .logo{
-    height: 75px;
-    width: 100px;
+    height: 88px;
     float: left;
     position: absolute;
     left: 2%;
@@ -103,21 +102,6 @@ input {
 
 
 
-
-.wagging {
-    
-    position: relative;
-    float: right;
-    margin-top: 31%;
-    left: 15%;
-    bottom: 120px;
-    right: 60px;
-    width: 200px;
-    height: 100px;
-    border: 3px solid navy;
-
-}
-
 fieldset {
     width: 90%;
     height: 40%;
@@ -127,6 +111,7 @@ fieldset {
 
 #pawheart {
     width: 25px;
+    height: 20px;
 }
 
 footer {
