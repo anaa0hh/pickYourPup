@@ -4,6 +4,13 @@ body {
     background: linear-gradient(to bottom right, #3e81cc, white);
 
 }
+
+img#logo {
+    height:120px;
+    border: 1px black solid;
+    margin-left: 10px;
+    margin-top: -22px;
+}
  
 #container {
  width: 800px;
@@ -27,6 +34,8 @@ img{
     color:orange;
     font-weight:bolder;
     margin-bottom:-30px;
+    margin-left: 50px;
+    margin-top:-90px;
     text-align: center;
     font: 100 60px/1.5 'Quicksand', sans-serif;
     
