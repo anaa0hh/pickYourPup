@@ -27,7 +27,11 @@ Page linking to resources.
 
 Back button a strecth goal.
 
-Eliminate 1st page
+Eliminate 1st page.
+
+Add more hypoallergenic dogs to our results.
+
+create a pre and post sort versions of dog array.
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

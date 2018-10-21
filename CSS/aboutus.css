@@ -1,0 +1,128 @@
+/* THIS IS THE STYLING FOR aboutus.html */
+
+
+
+body {
+    max-width: 800px;
+    margin: auto;
+    background: linear-gradient(to bottom right, #6495ED, white);
+
+
+}
+h1 {
+    color: darkblue;
+    background-color: white;
+    font: bold;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Quicksand', sans-serif;
+    border: 4px orange solid;
+}
+
+h2 {
+    color: orange;
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 43%;
+}
+
+
+h3 {
+    color: orange;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: -70px;
+    position: relative;
+    margin-top: -180px;
+}
+
+h4 {
+    color: orange;
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+    margin-right: 36%;
+    
+}
+    
+    
+p {
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 43%;
+    font-size: 18px;
+}
+
+#content{
+    width: 10px;
+    height: 10px;
+    margin-left: 300px;
+    position: relative;
+    float: left;
+}
+
+#contact-fields {
+    height: 30%;
+    width: 30%;
+   
+    
+}
+
+#resources {
+    margin-right:30%;
+}
+
+#contact {
+    margin-right: 10%;
+    
+    
+
+}
+.us {
+    height: 150px;
+    width: 300px;
+    /* position: relative; */
+    border:3px black solid;
+    float: left;
+    padding: 3%;
+    margin-top: 7%;
+    margin-left: -10%;
+}
+
+.logo{
+    height: 88px;
+    float: left;
+    position: absolute;
+    left: 2%;
+    border:3px black solid;
+}
+
+input {
+    height: 40%;
+    width: 75%;
+}
+
+
+
+fieldset {
+    width: 300px;
+    /* height: 40%; */
+    margin-left: -63px;
+    margin-bottom: 20px;
+}
+
+#pawheart {
+    width: 25px;
+    height: 20px;
+}
+
+footer {
+    margin-left: 487px;
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+
+   
+}
+
+
+
+
+

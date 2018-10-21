@@ -1,0 +1,148 @@
+/* COMMON STYLING AREA */
+
+/* Styling for results.html */
+
+body {
+    width: 800px;
+    margin: auto;
+}
+
+html {
+    background: linear-gradient(to bottom right, #3e81cc, white);
+
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 36px;
+    margin-bottom:-20px;
+    color: darkblue;
+}
+h2 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    color: darkblue;
+}
+
+img {
+    height:215px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
+    margin-bottom:10px;
+}
+
+img#result-pic{
+    width:31%;
+    float:left;
+    margin-left:3%;
+}
+img#result-pic2{
+    width:31%;
+    margin-left:3px;
+    float:left;
+}
+img#result-pic3{
+    width:31%;
+    float:left;
+    margin-left:3px;
+}
+
+
+
+#matcharea {
+    width: 800px;
+    height: 295px;
+    border-width: 5px;
+    background-color: white;
+    border-style: solid;
+    border-color: orange;
+    padding: 1%;
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:10px;
+    vertical-align: bottom;
+    cursor: pointer;
+    /* display: table-cell; */
+}
+
+/* #matches {
+    /* vertical-align: bottom;
+    display: table-cell; */
+    /* display: inline-block;
+} */ 
+
+#descriptionarea {
+    width: 800px;
+    margin-top: 5px;
+    border-width: 5px;
+    background-color:white;
+    padding: 1%;
+    border-style: solid;
+    border-color: orange;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#descriptionarea > h1 {
+    font-family: 'Quicksand', sans-serif;
+    color: darkblue;
+}
+#breedDesc {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    color: darkblue;
+    line-height: 40px;
+}
+#descriptionarea > h2,li,p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: darkblue;
+    line-height: 24px;
+}
+button {
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: orange;
+    transition: 350ms;
+    margin-bottom:25px;
+    margin-left:20px;
+
+}
+button:hover {
+    background: lightskyblue;
+}
+
+button#clearStorage {
+    margin-left:45px;
+}
+iframe {
+    margin-top:15px;
+    margin-left:90px;
+}
+
+
+footer {
+    margin-right: -40px;
+    width: 375px;
+    margin-top: 10px;
+    margin-left: 265px;
+    margin-bottom: 20px;
+    }
+    
+    footer a {
+        text-decoration: none;
+        font-family: 'Quicksand', sans-serif;
+    }
+    
+    img#pawheart {
+        width: 23px;
+        height:20px;
+        border:none;
+    }
+

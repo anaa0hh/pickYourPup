@@ -1,0 +1,80 @@
+/* THIS IS THE STYLING FOR quiz.html */
+body {
+    width: 800px;
+    margin: auto;
+}
+html{
+    background: linear-gradient(to bottom right, #3e81cc, white);
+
+}
+
+h1 {
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 36px;
+    font-weight:bolder;
+    color: darkblue;
+}
+h2 {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    color: darkblue;
+}
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: darkblue;
+}
+fieldset {
+    margin-top: -10px;
+    margin-left: 10px;
+    border: 0;
+}
+
+#quiz-area {
+    width: 80%;
+    /* height: 400px; */
+    border-width: 5px;
+    border-style: solid;
+    border-color: orange;
+    padding: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:white;
+    font-weight:bold;
+}
+
+#submit-button {
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    background-color:orange;
+    transition: 350ms;
+}
+#submit-button:hover {
+    background: lightskyblue
+}
+
+footer {
+margin-left:250px;
+margin-top: 15px;
+margin-bottom:15px;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#pawheart {
+    width: 25px;
+}
